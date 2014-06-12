@@ -1,0 +1,101 @@
+/* Basic jQuery Slider essential styles */
+div#banner-fade{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow:hidden;
+	width:940px;
+	height:325px;
+}
+ul.bjqs{
+	position:relative; 
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	display:none;
+}
+li.bjqs-slide{
+	position:absolute;
+	display:none;
+}
+
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls li a{display:block;width:19px;height:43px;text-decoration: none;position:absolute;top:123px;transition:opacity 1s;}
+ul.bjqs-controls li a:hover{opacity:0.5;transition:opacity 1s;}
+ul.bjqs-controls li.bjqs-next a{right:15px;background:url(arrows.png) top right;}
+ul.bjqs-controls li.bjqs-prev a{left:15px;background:url(arrows.png) top left;}
+
+ul.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;position:absolute;margin-top:-70px;}
+ul.bjqs-markers li{float:left;width:235px;height:70px;overflow:hidden;margin:0;padding:0}
+ul.bjqs-markers li div.to_link{
+	visibility:hidden;opacity:0;
+	transition-delay:0s;
+	position:absolute;
+	text-align:center;
+	padding:25px;
+	width:185px;
+}
+ul.bjqs-markers li div a{
+	color:white;
+	text-decoration:none;
+}
+ul.bjqs-markers li div.to_link a{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+ul.bjqs-markers li div.marker{
+	width:213px;
+	height:48px;
+	position:absolute;;background: #6eb01a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6eb01a 0%, #4c8107 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6eb01a), color-stop(100%,#4c8107)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6eb01a 0%,#4c8107 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6eb01a 0%,#4c8107 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6eb01a 0%,#4c8107 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #6eb01a 0%,#4c8107 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6eb01a', endColorstr='#4c8107',GradientType=0 ); /* IE6-9 */
+	border:1px solid #436a10;
+	padding:10px;
+}
+ul.bjqs-markers li.active-before div.marker{
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+ul.bjqs-markers li.active-after div.marker{
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+}
+ul.bjqs-markers l#first-child div.marker{
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+}
+ul.bjqs-markers li#last-child div.marker{
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+}
+
+ul.bjqs-markers li div.marker a{	width:233px;height:68px;display:block;}
+ul.bjqs-markers li div.marker img{
+	width:50px;
+	height:50px;
+	margin-right:18px;
+	float:left;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+ul.bjqs-markers li.active-marker div.to_link{visibility:visible; opacity:1;}
+ul.bjqs-markers li.active-marker div.marker{display:none;}
+ul.bjqs-markers li a{padding:0;margin:0;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;background: rgba(255,255,255,0.5);}
+
+ul.bjqs-markers li div.marker div.title {}
+ul.bjqs-markers li div.marker div.subtitle {}
+
+
